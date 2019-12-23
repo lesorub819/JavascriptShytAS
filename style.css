@@ -1,4 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 .chess {
     width: 500px;
     height: 500px;
+}
+.CatalogItem {
+    display: flex;
+    width:1000px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 125;
+}
+.CatalogItem_h3{
+    width: 200px;
+}
+.CatalogItem_p{
+    width: 150px;
+}
+.CatalogItem_img:hover{
+    cursor: pointer;
+}
+.catalog-wrapper{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+    opacity: 0.8;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-blend-mode: overlay;
+    z-index: 200;
+
+
+}
+.catalog-overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: auto;
+    opacity: 1; !important;
+    z-index: 209;
+}
+
+.catalogItem_img__max{
+    position: absolute;
+
+
+}
+.catalog{
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
 }
