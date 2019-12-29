@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+<div class="cart-catalog-header header">
+    <h3 class="h3">Товары в корзине</h3>
+</div>
+<div class="cart-wrapper" data-blocknumber="0" id="0">
+<div class="catalog"></div>
+    <div class="cart-catalog-footer">
+<div class="basketSum"></div>
+    <input type="button" id = "cartButton" value="Далее" class="cartNextStep" data-blocknumber="0">
+    </div>
+</div>
+<div class="shipping-header header">
+    <h3 class="h3">Адрес доставки</h3>
+</div>
+<div class="shipping-info" data-blocknumber="1" id="1">
+    <div class="checkout__content">
+        <div class="checkout__block">
+            <div class="checkout__subblock">
+                <h3 class="checkout__h3">Check as a guest or register</h3>
+                <p class="checkout__p">Register with us for future convenience</p>
+                <label class="checkout__label"><input type="radio" name="guest-or-register" class="checkout__radio">checkout as guest</label>
+                <label class="checkout__label"><input type="radio" name="guest-or-register" class="checkout__radio">register</label>
+                <h3 class="checkout__h3">register and save time!</h3>
+                <p class="checkout__p">Register with us for future convenience</p>
+                <p class="checkout__p checkout__p_without-margin-b"><i class="fas fa-angle-double-right"></i>Fast and easy checkout</p>
+                <p class="checkout__p"><i class="fas fa-angle-double-right"></i>Easy access to your order history and status</p>
+            </div>
+            <div class="checkout__subblock">
+                <button class="checkout__button buttons-effect">Continue</button>
+            </div>
+        </div>
+        <div class="checkout__block">
+            <div class="checkout__subblock">
+                <h3 class="checkout__h3">Already registered?</h3>
+                <p class="checkout__p">Please log in below</p>
+                <label class="checkout__label checkout__label_radio">E-mail <span style="display: inline;color: #ff0d0d">*</span><input type="email" class="checkout__input"></label>
+                <label class="checkout__label checkout__label_radio">Password <span style="color: #ff0d0d">*</span><input type="text" class="checkout__input"></label>
+                <p class="checkout__p checkout__p_red checkout__p_without-margin-t">* Required Fields</p>
+            </div>
+            <div class="checkout__subblock checkout__subblock_bottom">
+                <button class="checkout__button buttons-effect">Log in</button>
+                <a href="#" class="checkout__a checkout__p">Forgot password?</a>
+            </div>
+        </div>
+    </div>
+    <div class="rightAlign">
+    <input type="button" id="shippingButton" value="Далее" class="cartNextStep" data-blocknumber="1">
+    </div>
+</div>
+<div class="comment-header header">
+    <h3 class="h3">Комментарии</h3>
+</div>
+    <div class="comments" data-blocknumber="2" id="2">
+        <div class="checkout__content">
+            <div class="checkout__block">
+                <div class="checkout__subblock">
+                    <h3 class="checkout__h3">Check as a guest or register</h3>
+                    <p class="checkout__p">Register with us for future convenience</p>
+                    <label class="checkout__label"><input type="radio" name="guest-or-register" class="checkout__radio">checkout as guest</label>
+                    <label class="checkout__label"><input type="radio" name="guest-or-register" class="checkout__radio">register</label>
+                    <h3 class="checkout__h3">register and save time!</h3>
+                    <p class="checkout__p">Register with us for future convenience</p>
+                    <p class="checkout__p checkout__p_without-margin-b"><i class="fas fa-angle-double-right"></i>Fast and easy checkout</p>
+                    <p class="checkout__p"><i class="fas fa-angle-double-right"></i>Easy access to your order history and status</p>
+                </div>
+                <div class="checkout__subblock">
+                    <button class="checkout__button buttons-effect">Continue</button>
+                </div>
+            </div>
+            <div class="checkout__block">
+                <div class="checkout__subblock">
+                    <h3 class="checkout__h3">Already registered?</h3>
+                    <p class="checkout__p">Please log in below</p>
+                    <label class="checkout__label checkout__label_radio">E-mail <span style="display: inline;color: #ff0d0d">*</span><input type="email" class="checkout__input"></label>
+                    <label class="checkout__label checkout__label_radio">Password <span style="color: #ff0d0d">*</span><input type="text" class="checkout__input"></label>
+                    <p class="checkout__p checkout__p_red checkout__p_without-margin-t">* Required Fields</p>
+                </div>
+                <div class="checkout__subblock checkout__subblock_bottom">
+                    <button class="checkout__button buttons-effect">Log in</button>
+                    <a href="#" class="checkout__a checkout__p">Forgot password?</a>
+                </div>
+            </div>
+        </div>
+        <div class="rightAlign">
+            <input type="button" id="commentsButton" value="Далее" class="cartNextStep" data-blocknumber="2">
+        </div>
+    </div>
+</div>
+<script src="lesson7.js"></script>
+</body>
+</html>
