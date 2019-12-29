@@ -11,12 +11,14 @@ const basket = {
         else {
             this.basketField.innerHTML=this.renderEmptyBasket();
         }
+        localStorage.setItem("basket", JSON.stringify(basket));
     },
     numberOfBasketElements(){
         return this.products.length;
     },
     renderFullBasket(){
-        return `В корзине ${this.numberOfBasketElements()} товаров на сумму ${this.basketSum()}`;
+        return `В корзине ${this.numberOfBasketElements()} товаров на сумму ${this.basketSum()}
+        <a href="cart.html">Перейти в корзину</a>`;
     },
     basketSum(){
         let sum=0;
@@ -26,7 +28,8 @@ const basket = {
         return sum;
     },
     renderEmptyBasket(){
-        return 'Корзина пуста';
+        return `Корзина пуста
+        <a href="cart.html" class="goToCartButton">Перейти в корзину</a>`;
     },
     basketStyle(){
         this.basketField.style.fontSize='20px';
@@ -36,6 +39,7 @@ const basket = {
     addtobasket(product_id) {
         this.products.push(catalog.products.find(products=> products.product_id===product_id));
         this.renderBasket();
+
     }
 };
 const catalog ={
@@ -148,5 +152,6 @@ const catalog ={
         document.querySelector('.catalogItem_img__max').remove();
     },
 };
+basket.products=(JSON.parse(localStorage.getItem("basket"))).products;
 catalog.init();
 basket.renderBasket();

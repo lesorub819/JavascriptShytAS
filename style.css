@@ -59,3 +59,55 @@
     flex-direction: column;
     z-index: 100;
 }
+.goToCartButton{
+    display: block;
+}
+.wrapper{
+    width: 1000px;
+    margin: 50px auto 0;
+}
+.header{
+    background-color: crimson;
+    outline: 1px solid cornflowerblue;
+    margin-bottom: 8px;
+}
+.basketSum{
+    display: block;
+    text-align: right;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bold;
+
+    background-color: antiquewhite;
+    width: fit-content;
+
+}
+.cartNextStep{
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 30px;
+
+
+}
+.cart-catalog-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.checkout__content{
+    display: flex;
+    justify-content: space-between;
+}
+.shipping-info{
+    display: none;
+}
+.comments{
+    display: none;
+}
+.rightAlign{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
